@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flagged Inc. | All Flags Shop</title>
+    <link rel="stylesheet" href="static/css/main.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,700&family=Tinos:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    
+
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% block html_head %}{% endblock %}
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <a href="{{url_for('index')}}">Flagged Inc.</a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li><a href="{{ url_for('products') }}">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+
+                <a href="{{url_for('cart')}}">
+                    <img src="{{ url_for('static', filename='images/cart.png')}}" width="30px" height="30px">
+               
+                </a>
+
+                <img src="{{ url_for('static', filename='images/menu.png')}}" class="menu-icon"   onclick="menutoggle()">
+                                                 
+               
+            </div>
+
+        </div>
+    
+
+    </div> 
+
+  {% block content %}{% endblock %}
+
+  {% block footer %}
+ 
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias, error natus laboriosam repellat atque soluta! Officia esse eius accusamus error reprehenderit placeat quaerat, dolorum excepturi voluptate tempore eaque sunt.</p>
+                        <div class="app-logo">
+                            
+                                <img src="{{ url_for('static', filename='images/google_play_store.png')}}" alt="">
+                                <img src="{{ url_for('static', filename='images/app_store.png')}}" alt="">
+                                
+                               
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="{{ url_for('static', filename='images/usFlag.png')}}" alt="">
+                                
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias, error natus laboriosam repellat atque soluta! Officia esse eius accusamus error reprehenderit placeat quaerat, dolorum excepturi voluptate tempore eaque sunt.</p>
+                    
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links: </h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog</li>
+                            <li>Return Policy</li>
+                            <li>Affiliate Program</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us </h3>
+                        <ul>
+                            <li>YouTube</li>
+                            <li>Twitter</li>
+                            <li>Facebook</li>
+                            <li>TikTok</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&#9400; Copyright: 2022   Flagged Inc</p>
+
+
+
+            </div>
+        </div>
+
+   
+  {% endblock %}
+
+
+  
+  <!-- js -->
+  <script>
+      var menuItems = document.getElementById('menuItems');
+
+      menuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+          if( menuItems.style.maxHeight == "0px"){
+
+            menuItems.style.maxHeight = "200px";
+          }else{
+            menuItems.style.maxHeight = "0px";
+          }
+      };
+
+
+  </script>
+
+
+
+
+</body>
+</html>
