@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block html_head %}{% endblock %}
+
+
+
+
+
+{%block content%}
+
+<div class="container row">
+        
+<div class="col-2">
+    <h1>US made flags, and more!</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio, beatae deserunt! Cumque accusamus pariatur <br> quisquam quam dolore temporibus quo quis unde, ab alias quidem non eligendi repellat cum perferendis.
+    </p>
+    <a href="" class="btn">Explore Now &#8594;</a>
+</div>
+<div class="col-2">
+    <img src="{{ url_for('static', filename='images/usFlag.png')}}" alt="">
+
+</div>
+
+</div>
+
+
+  
+<div class="categories">
+    <div class="small-container">
+
+
+      <div class="row">
+          <div class="col-3">
+              <img src="{{ url_for('static', filename='images/ghana.png') }}">
+        
+          </div>
+          <div class="col-3">
+
+            <img src="{{ url_for('static', filename='images/croatia.png') }}">
+        
+          </div>
+          <div class="col-3">
+ 
+            <img src="{{ url_for('static', filename='images/poland.png') }}">
+        
+          </div>
+
+
+      </div>
+
+    </div>
+
+</div>
+
+<!-- Featured products -->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='images/senegal.png') }}">
+        
+            <h4>Senegal</h4>
+            <p>$89.47</p>
+        </div>
+        <div class="col-4">
+          <img src="{{ url_for('static', filename='images/Mexico.jpeg') }}">
+        
+          <h4>Mexico</h4>
+          <p>$89.47</p>
+        </div>
+        <div class="col-4">
+         
+          <img src="{{ url_for('static', filename='images/uruguay.png') }}">
+        
+          <h4>Uruguay</h4>
+          <p>$89.47</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='images/peru.png') }}">
+        
+          <h4>Peru</h4>
+          <p>$89.47</p>
+        </div>
+        
+    </div>
+
+    <h2 class="title">Latest Products</h2>
+
+
+    <div class="row">
+
+      <div class="col-4">
+          <img src="{{ url_for('static', filename='images/qatar.png') }}">
+         
+          <h4>Qatar</h4>
+          <p>$89.47</p>
+      </div>
+      <div class="col-4">
+       
+        <img src="{{ url_for('static', filename='images/denmark.png') }}">
+         
+        <h4>Denmark</h4>
+        <p>$89.47</p>
+      </div>
+      <div class="col-4">
+        <img src="{{ url_for('static', filename='images/serbia.png') }}">
+         
+        <h4>Serbia</h4>
+        <p>$89.47</p>
+      </div>
+      <div class="col-4">
+        <img src="{{ url_for('static', filename='images/england.png') }}">
+        <h4>England</h4>
+        <p>$89.47</p>
+      </div>
+
+
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-4">
+          <img src="{{ url_for('static', filename='images/egypt.png') }}">
+          <h4>Egypt</h4>
+          <p>$89.47</p>
+          </div>
+          <div class="col-4">
+            <img src="{{ url_for('static', filename='images/spain.png') }}">
+          <h4>Spain</h4>
+          <p>$89.47</p>
+          </div>
+          <div class="col-4">
+              <img src="{{ url_for('static', filename='images/belgum.png')}}" alt="">
+          <h4>Belgum</h4>
+          <p>$89.47</p>
+          </div>
+          <div class="col-4">
+         
+            <img src="{{ url_for('static', filename='images/germany.png') }}">
+               
+          <h4>Germany</h4>
+          <p>$89.47</p>
+          
+      </div>
+
+
+    </div>
+  
+ 
+
+</div>
+
+
+<!-- offer -->
+
+
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="{{ url_for('static', filename='images/serbia.png') }}" alt="" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Save 5% when you sign up for an account.</p>
+                <h1>Smart way to shop,<b>Smart way to save!</b></h1>
+                <small>All US flags sold here are made here in The USA, not imported.</small>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- testtimonial -->
+
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+              <div class="col-3">
+
+                  <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam voluptas laudantium fugit, voluptate expedita cumque saepe nobis corporis, id consequatur quam ad hic quo vitae eum fuga aliquam tempore" </p>
+              
+                  <img src="{{ url_for('static', filename='images/user1.png') }}" alt="">
+               
+                  <h3>Mike</h3>
+              </div>
+              <div class="col-3">
+                  <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam voluptas laudantium fugit, voluptate expedita cumque saepe nobis corporis, id consequatur quam ad hic quo vitae eum fuga aliquam tempore" </p>
+              
+                  <img src="{{ url_for('static', filename='images/user2.jpeg') }}" alt="">
+               
+                  <h3>Sarah</h3>
+              </div>
+              <div class="col-3">
+                  <p>" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quibusdam voluptas laudantium fugit, voluptate expedita cumque saepe nobis corporis, id consequatur quam ad hic quo vitae eum fuga aliquam tempore" </p>
+              
+                  <img src="{{ url_for('static', filename='images/user3.png') }}" alt="">
+               
+                  <h3>Jane</h3>
+                  
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- brands     -->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/cameroon.png') }}" alt="">
+               
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/saudiArabia.png') }}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/portugal.png') }}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/brazil.png') }}" alt="">
+               
+            </div>
+            <div class="col-5">
+              <img src="{{ url_for('static', filename='images/canada.png') }}" alt="">
+               
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+{%endblock%}
